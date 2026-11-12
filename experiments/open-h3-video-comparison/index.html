@@ -48,8 +48,8 @@
 
         <section class="comparison-shell" aria-label="视频左右滑动对比播放器">
           <div class="video-stage" id="video-stage">
-            <video class="video-layer before" id="before-video" muted playsinline loop preload="metadata"></video>
-            <video class="video-layer after" id="after-video" muted playsinline loop preload="metadata"></video>
+            <video class="video-layer before" id="before-video" muted playsinline loop preload="auto"></video>
+            <video class="video-layer after" id="after-video" muted playsinline loop preload="auto"></video>
             <span class="stage-label left" id="left-stage-label">Before</span>
             <span class="stage-label right" id="right-stage-label">After</span>
             <div class="split-line" aria-hidden="true"></div>
@@ -66,6 +66,7 @@
             <div class="meta-side" id="left-meta"></div>
             <div class="meta-side" id="right-meta"></div>
           </div>
+          <p class="playback-note">网页播放使用同分辨率优化版；原始实验视频可在上方分别下载。</p>
         </section>
       </section>
 

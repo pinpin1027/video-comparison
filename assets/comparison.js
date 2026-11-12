@@ -36,9 +36,22 @@ function formatTime(seconds) {
   return `${minutes}:${remainder}`;
 }
 
+function formatBytes(bytes) {
+  if (!Number.isFinite(Number(bytes))) return "";
+  const megabytes = Number(bytes) / (1024 * 1024);
+  return `${megabytes.toFixed(megabytes >= 10 ? 1 : 2)} MB`;
+}
+
 function metaText(meta) {
   const fps = Number(meta.fps).toFixed(Number(meta.fps) % 1 ? 2 : 0);
-  return `${meta.width}×${meta.height} · ${fps} fps · ${meta.frames} 帧 · ${Number(meta.duration).toFixed(3)} 秒`;
+  return `${meta.width}×${meta.height} · ${fps} fps · ${meta.frames} 帧 · ${Number(meta.duration).toFixed(3)} 秒 · 网页版 ${formatBytes(meta.size)}`;
+}
+
+function metaMarkup(label, meta, originalUrl) {
+  const download = originalUrl
+    ? `<a class="original-download" href="${originalUrl}" download>下载原始文件 <span>${formatBytes(meta.originalSize)}</span></a>`
+    : "";
+  return `<strong>${label}</strong><span class="meta-details">${metaText(meta)}</span>${download}`;
 }
 
 function setSplit(percent) {
@@ -213,8 +226,8 @@ function applyCase(caseId, updateUrl = true) {
   afterVideo.load();
   timeline.value = "0";
   timeline.max = String(Math.max(selected.leftMeta.duration, selected.rightMeta.duration));
-  leftMeta.innerHTML = `<strong>${manifest.leftLabel}</strong><span>${metaText(selected.leftMeta)}</span>`;
-  rightMeta.innerHTML = `<strong>${manifest.rightLabel}</strong><span>${metaText(selected.rightMeta)}</span>`;
+  leftMeta.innerHTML = metaMarkup(manifest.leftLabel, selected.leftMeta, selected.leftOriginal);
+  rightMeta.innerHTML = metaMarkup(manifest.rightLabel, selected.rightMeta, selected.rightOriginal);
   caseSelect.value = selected.id;
   showMessage("点击播放开始同步对比；拖动中线查看左右差异。");
   if (updateUrl) {

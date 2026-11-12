@@ -117,7 +117,11 @@ main { width: min(1220px, calc(100% - 40px)); margin-inline: auto; }
 .case-metadata { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--line); border-top: 1px solid var(--line); }
 .meta-side { padding: 18px; background: var(--panel); }
 .meta-side strong { display: block; margin-bottom: 6px; font-size: 0.84rem; }
-.meta-side span { color: var(--muted); font-size: 0.78rem; }
+.meta-details { display: block; color: var(--muted); font-size: 0.78rem; }
+.original-download { display: inline-flex; align-items: center; gap: 8px; margin-top: 13px; padding: 8px 10px; color: var(--text); text-decoration: none; background: var(--panel-2); border: 1px solid var(--line); border-radius: 9px; font-size: 0.76rem; }
+.original-download:hover { border-color: var(--accent); }
+.original-download span { color: var(--muted); }
+.playback-note { margin: 0; padding: 12px 18px; color: var(--muted); background: rgba(184,255,91,0.035); border-top: 1px solid var(--line); font-size: 0.74rem; }
 @media (max-width: 780px) {
   .site-header, .site-footer, main { width: min(100% - 24px, 1220px); }
   .header-note { display: none; }
