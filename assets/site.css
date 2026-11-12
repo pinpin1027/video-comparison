@@ -108,9 +108,10 @@ main { width: min(1220px, calc(100% - 40px)); margin-inline: auto; }
 .stage-message { position: absolute; z-index: 7; inset: auto 18px 18px; width: fit-content; max-width: calc(100% - 36px); padding: 9px 12px; color: var(--text); background: rgba(8, 11, 16, 0.78); border: 1px solid var(--line); border-radius: 10px; font-size: 0.76rem; backdrop-filter: blur(10px); }
 .stage-message[hidden] { display: none; }
 
-.controls { display: grid; grid-template-columns: auto minmax(120px, 1fr) auto auto; gap: 14px; align-items: center; padding: 16px 18px; border-top: 1px solid var(--line); }
+.controls { display: grid; grid-template-columns: auto auto minmax(120px, 1fr) auto auto; gap: 14px; align-items: center; padding: 16px 18px; border-top: 1px solid var(--line); }
 .control-button { min-height: 42px; padding: 0 15px; color: var(--text); background: var(--panel-2); border: 1px solid var(--line); border-radius: 10px; cursor: pointer; }
 .control-button:hover { border-color: var(--line-strong); }
+.control-button:disabled { color: #697381; cursor: not-allowed; opacity: 0.62; }
 .timeline { width: 100%; accent-color: var(--accent); }
 .time-label { min-width: 96px; color: var(--muted); font-variant-numeric: tabular-nums; font-size: 0.8rem; text-align: right; }
 
@@ -130,9 +131,12 @@ main { width: min(1220px, calc(100% - 40px)); margin-inline: auto; }
   .section-heading { align-items: start; flex-direction: column; }
   .subexperiment-heading { align-items: start; flex-direction: column; }
   .comparison-main { padding-top: 32px; }
-  .controls { grid-template-columns: auto 1fr auto; }
+  .controls { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .timeline { grid-column: 1 / -1; grid-row: 1; }
-  .time-label { min-width: 0; }
+  #play-button { grid-column: 1; grid-row: 2; }
+  #pause-button { grid-column: 2; grid-row: 2; }
+  #mute-button { grid-column: 3; grid-row: 2; }
+  .time-label { grid-column: 1 / -1; grid-row: 3; min-width: 0; text-align: center; }
   .case-metadata { grid-template-columns: 1fr; }
   .stage-label { top: 10px; max-width: 45%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .stage-label.left { left: 10px; }

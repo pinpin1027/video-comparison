@@ -3,6 +3,7 @@ const beforeVideo = document.querySelector("#before-video");
 const afterVideo = document.querySelector("#after-video");
 const splitHandle = document.querySelector("#split-handle");
 const playButton = document.querySelector("#play-button");
+const pauseButton = document.querySelector("#pause-button");
 const timeline = document.querySelector("#timeline");
 const timeLabel = document.querySelector("#time-label");
 const muteButton = document.querySelector("#mute-button");
@@ -107,12 +108,14 @@ function scheduleResume() {
 
 async function startPlayback() {
   wantsPlayback = true;
+  pauseButton.disabled = false;
   if (playStarting) return;
   if (!beforeVideo.paused && !afterVideo.paused) {
-    playButton.textContent = "暂停";
+    playButton.textContent = "播放中";
     return;
   }
   if (!videosReady()) {
+    playButton.textContent = "正在缓冲";
     showMessage("正在等待两侧视频缓冲…");
     scheduleResume();
     return;
@@ -137,12 +140,14 @@ async function startPlayback() {
     }
     wantsPlayback = false;
     playButton.textContent = "播放";
+    pauseButton.disabled = true;
     showMessage(`无法播放：${error?.message || "未知浏览器错误"}`);
     return;
   }
 
   if (!wantsPlayback) return;
-  playButton.textContent = "暂停";
+  playButton.textContent = "播放中";
+  pauseButton.disabled = false;
   cancelAnimationFrame(syncFrame);
   syncFrame = requestAnimationFrame(syncVideos);
 }
@@ -154,7 +159,8 @@ function pausePlayback({ preserveIntent = false } = {}) {
   beforeVideo.pause();
   afterVideo.pause();
   if (!preserveIntent) wantsPlayback = false;
-  playButton.textContent = "播放";
+  playButton.textContent = preserveIntent ? "正在缓冲" : "播放";
+  pauseButton.disabled = !preserveIntent;
   cancelAnimationFrame(syncFrame);
 }
 
@@ -173,8 +179,9 @@ function updateTimeline() {
 }
 
 playButton.addEventListener("click", () => {
-  if (wantsPlayback) pausePlayback(); else startPlayback();
+  startPlayback();
 });
+pauseButton.addEventListener("click", () => pausePlayback());
 
 timeline.addEventListener("pointerdown", () => { draggingTimeline = true; });
 timeline.addEventListener("input", () => {
@@ -341,6 +348,7 @@ async function initialize() {
     if (readyContent) readyContent.hidden = false;
     showMessage(`实验清单加载失败：${error.message}`);
     playButton.disabled = true;
+    pauseButton.disabled = true;
     caseSelect.disabled = true;
   }
 }
