@@ -12,15 +12,22 @@ const rightStageLabel = document.querySelector("#right-stage-label");
 const leftMeta = document.querySelector("#left-meta");
 const rightMeta = document.querySelector("#right-meta");
 const stageMessage = document.querySelector("#stage-message");
-const notesList = document.querySelector("#notes-list");
-const settingsList = document.querySelector("#settings-list");
-const sourceLinks = document.querySelector("#source-links");
+const subexperimentGrid = document.querySelector("#subexperiment-grid");
+const readyContent = document.querySelector("#ready-experiment-content");
+const pendingContent = document.querySelector("#pending-experiment-content");
+const pendingTitle = document.querySelector("#pending-title");
+const pendingDescription = document.querySelector("#pending-description");
+const experimentKicker = document.querySelector("#experiment-kicker");
 
 let manifest;
-let activeCase;
+let collection;
+let selectedExperiment;
 let wantsPlayback = false;
 let draggingTimeline = false;
 let syncFrame = 0;
+let playAttempt = 0;
+let playStarting = false;
+let resumeTimer = 0;
 
 function formatTime(seconds) {
   if (!Number.isFinite(seconds)) return "0:00.0";
@@ -46,7 +53,6 @@ function splitFromPointer(event) {
 }
 
 stage.addEventListener("pointerdown", (event) => {
-  if (event.target.closest(".controls")) return;
   stage.setPointerCapture(event.pointerId);
   splitFromPointer(event);
 });
@@ -63,7 +69,8 @@ splitHandle.addEventListener("keydown", (event) => {
 });
 
 function videosReady() {
-  return beforeVideo.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA && afterVideo.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA;
+  return beforeVideo.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA
+    && afterVideo.readyState >= HTMLMediaElement.HAVE_FUTURE_DATA;
 }
 
 function showMessage(message) {
@@ -75,27 +82,62 @@ function hideMessage() {
   stageMessage.hidden = true;
 }
 
+function scheduleResume() {
+  clearTimeout(resumeTimer);
+  if (!wantsPlayback) return;
+  resumeTimer = window.setTimeout(() => {
+    if (wantsPlayback && videosReady() && !playStarting && (beforeVideo.paused || afterVideo.paused)) {
+      startPlayback();
+    }
+  }, 160);
+}
+
 async function startPlayback() {
   wantsPlayback = true;
-  if (!videosReady()) {
-    showMessage("正在等待两侧视频缓冲…");
+  if (playStarting) return;
+  if (!beforeVideo.paused && !afterVideo.paused) {
+    playButton.textContent = "暂停";
     return;
   }
-  hideMessage();
-  const anchor = beforeVideo.currentTime;
-  afterVideo.currentTime = anchor;
-  try {
-    await Promise.all([beforeVideo.play(), afterVideo.play()]);
-    playButton.textContent = "暂停";
-    cancelAnimationFrame(syncFrame);
-    syncFrame = requestAnimationFrame(syncVideos);
-  } catch (error) {
-    wantsPlayback = false;
-    showMessage(`浏览器阻止播放：${error.message}`);
+  if (!videosReady()) {
+    showMessage("正在等待两侧视频缓冲…");
+    scheduleResume();
+    return;
   }
+
+  clearTimeout(resumeTimer);
+  const attempt = ++playAttempt;
+  playStarting = true;
+  hideMessage();
+  afterVideo.currentTime = beforeVideo.currentTime;
+  const results = await Promise.allSettled([beforeVideo.play(), afterVideo.play()]);
+
+  if (attempt !== playAttempt) return;
+  playStarting = false;
+  const failure = results.find((result) => result.status === "rejected");
+  if (failure) {
+    const error = failure.reason;
+    if (wantsPlayback && error?.name === "AbortError") {
+      showMessage("一侧正在缓冲，已同步等待两侧视频…");
+      scheduleResume();
+      return;
+    }
+    wantsPlayback = false;
+    playButton.textContent = "播放";
+    showMessage(`无法播放：${error?.message || "未知浏览器错误"}`);
+    return;
+  }
+
+  if (!wantsPlayback) return;
+  playButton.textContent = "暂停";
+  cancelAnimationFrame(syncFrame);
+  syncFrame = requestAnimationFrame(syncVideos);
 }
 
 function pausePlayback({ preserveIntent = false } = {}) {
+  playAttempt += 1;
+  playStarting = false;
+  clearTimeout(resumeTimer);
   beforeVideo.pause();
   afterVideo.pause();
   if (!preserveIntent) wantsPlayback = false;
@@ -140,17 +182,15 @@ muteButton.addEventListener("click", () => {
 
 for (const video of [beforeVideo, afterVideo]) {
   video.addEventListener("waiting", () => {
-    if (wantsPlayback) {
-      pausePlayback({ preserveIntent: true });
-      showMessage("一侧正在缓冲，已同步暂停两侧视频…");
-    }
+    if (!wantsPlayback) return;
+    pausePlayback({ preserveIntent: true });
+    showMessage("一侧正在缓冲，已同步暂停两侧视频…");
+    scheduleResume();
   });
   video.addEventListener("stalled", () => {
     if (wantsPlayback) showMessage("网络读取较慢，正在等待两侧视频…");
   });
-  video.addEventListener("canplay", () => {
-    if (wantsPlayback && videosReady()) startPlayback();
-  });
+  video.addEventListener("canplay", scheduleResume);
   video.addEventListener("timeupdate", updateTimeline);
   video.addEventListener("error", () => showMessage("视频加载失败，请刷新页面或检查网络。"));
 }
@@ -166,7 +206,6 @@ afterVideo.addEventListener("loadedmetadata", () => {
 
 function applyCase(caseId, updateUrl = true) {
   const selected = manifest.cases.find((item) => item.id === caseId) || manifest.cases[0];
-  activeCase = selected;
   pausePlayback();
   beforeVideo.src = selected.left;
   afterVideo.src = selected.right;
@@ -177,7 +216,7 @@ function applyCase(caseId, updateUrl = true) {
   leftMeta.innerHTML = `<strong>${manifest.leftLabel}</strong><span>${metaText(selected.leftMeta)}</span>`;
   rightMeta.innerHTML = `<strong>${manifest.rightLabel}</strong><span>${metaText(selected.rightMeta)}</span>`;
   caseSelect.value = selected.id;
-  showMessage("视频已切换，点击播放开始同步对比。拖动中线查看左右差异。");
+  showMessage("点击播放开始同步对比；拖动中线查看左右差异。");
   if (updateUrl) {
     const url = new URL(window.location.href);
     url.searchParams.set("case", selected.id);
@@ -187,27 +226,106 @@ function applyCase(caseId, updateUrl = true) {
 
 caseSelect.addEventListener("change", () => applyCase(caseSelect.value));
 
-function renderList(target, items) {
-  target.innerHTML = items.map((item) => `<li>${item}</li>`).join("");
+async function loadManifest(url, experiment) {
+  const response = await fetch(url, { cache: "no-store" });
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  manifest = await response.json();
+  document.title = collection
+    ? `${manifest.title} · Open-H3-IC`
+    : `${manifest.title} · Video Comparison`;
+  document.querySelector("#experiment-title").textContent = manifest.title;
+  document.querySelector("#experiment-description").textContent = manifest.description;
+  if (experimentKicker && experiment) experimentKicker.textContent = `${experiment.title} · VIDEO COMPARISON`;
+  leftStageLabel.textContent = manifest.leftLabel;
+  rightStageLabel.textContent = manifest.rightLabel;
+  caseSelect.innerHTML = manifest.cases.map((item) => `<option value="${item.id}">${item.title}</option>`).join("");
+  if (readyContent) readyContent.hidden = false;
+  if (pendingContent) pendingContent.hidden = true;
+  const requested = new URLSearchParams(location.search).get("case");
+  applyCase(requested, false);
+}
+
+function setSelectedButton(id) {
+  document.querySelectorAll(".subexperiment-card").forEach((button) => {
+    const selected = button.dataset.experimentId === id;
+    button.classList.toggle("active", selected);
+    button.setAttribute("aria-pressed", String(selected));
+  });
+}
+
+async function selectExperiment(id, updateUrl = true) {
+  const experiment = collection.experiments.find((item) => item.id === id) || collection.experiments[0];
+  selectedExperiment = experiment;
+  setSelectedButton(experiment.id);
+  pausePlayback();
+
+  if (updateUrl) {
+    const url = new URL(window.location.href);
+    url.searchParams.set("experiment", experiment.id);
+    url.searchParams.delete("case");
+    history.replaceState(null, "", url);
+  }
+
+  if (experiment.status !== "ready" || !experiment.manifest) {
+    readyContent.hidden = true;
+    pendingContent.hidden = false;
+    pendingTitle.textContent = `${experiment.title}：${experiment.subtitle}`;
+    pendingDescription.textContent = experiment.summary;
+    document.title = `${experiment.title} · Open-H3-IC`;
+    return;
+  }
+
+  readyContent.hidden = true;
+  pendingContent.hidden = true;
+  await loadManifest(experiment.manifest, experiment);
+}
+
+function renderSubexperiments() {
+  subexperimentGrid.innerHTML = "";
+  for (const experiment of collection.experiments) {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "subexperiment-card";
+    button.dataset.experimentId = experiment.id;
+    button.setAttribute("aria-pressed", "false");
+
+    const top = document.createElement("span");
+    top.className = "subexperiment-card-top";
+    const index = document.createElement("span");
+    index.textContent = experiment.index;
+    const status = document.createElement("span");
+    status.className = experiment.status === "ready" ? "status-ready" : "status-pending";
+    status.textContent = experiment.status === "ready" ? "已上线" : "案例待添加";
+    top.append(index, status);
+
+    const title = document.createElement("strong");
+    title.textContent = experiment.title;
+    const subtitle = document.createElement("span");
+    subtitle.className = "subexperiment-subtitle";
+    subtitle.textContent = experiment.subtitle;
+    const summary = document.createElement("span");
+    summary.className = "subexperiment-summary";
+    summary.textContent = experiment.summary;
+    button.append(top, title, subtitle, summary);
+    button.addEventListener("click", () => selectExperiment(experiment.id));
+    subexperimentGrid.append(button);
+  }
 }
 
 async function initialize() {
   try {
-    const response = await fetch("manifest.json", { cache: "no-store" });
+    if (!subexperimentGrid) {
+      await loadManifest("manifest.json", null);
+      return;
+    }
+    const response = await fetch("collection.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    manifest = await response.json();
-    document.title = `${manifest.title} · Video Comparison`;
-    document.querySelector("#experiment-title").textContent = manifest.title;
-    document.querySelector("#experiment-description").textContent = manifest.description;
-    leftStageLabel.textContent = manifest.leftLabel;
-    rightStageLabel.textContent = manifest.rightLabel;
-    renderList(notesList, manifest.notes || []);
-    renderList(settingsList, manifest.settings || []);
-    sourceLinks.innerHTML = (manifest.links || []).map((link) => `<a href="${link.url}" target="_blank" rel="noreferrer">${link.label} ↗</a>`).join("");
-    caseSelect.innerHTML = manifest.cases.map((item) => `<option value="${item.id}">${item.title}</option>`).join("");
-    const requested = new URLSearchParams(location.search).get("case");
-    applyCase(requested, false);
+    collection = await response.json();
+    renderSubexperiments();
+    const requested = new URLSearchParams(location.search).get("experiment");
+    await selectExperiment(requested, false);
   } catch (error) {
+    if (readyContent) readyContent.hidden = false;
     showMessage(`实验清单加载失败：${error.message}`);
     playButton.disabled = true;
     caseSelect.disabled = true;

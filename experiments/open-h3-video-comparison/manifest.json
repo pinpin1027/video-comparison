@@ -1,24 +1,10 @@
 {
   "schemaVersion": 1,
-  "slug": "open-h3-video-comparison",
-  "title": "Open-H3 IC · Before 768P / After 2K",
-  "description": "左侧为官方 IC read_draft 流程导出的输入可视化，右侧为 Open-H3-Regenerate-2K-IC 输出。首批展示已经完成的 Case 04、05。",
+  "slug": "open-h3-ic-h3-vae",
+  "title": "H3 VAE：Before 768P / After 2K",
+  "description": "左侧为官方 IC read_draft 流程导出的输入可视化，右侧为标准 H3 VAE 解码的 Open-H3-Regenerate-2K-IC 输出。当前包含 Case 04、05。",
   "leftLabel": "Before · before_768p",
   "rightLabel": "After · after_2k",
-  "notes": [
-    "before_768p 是官方 read_draft 预处理结果的可播放 MP4：24 fps、124 帧、1344×768；MP4 编码并非内部浮点张量的逐像素无损副本。",
-    "after_2k 是模型输出 MP4：24 fps、124 帧、2560×1440。",
-    "播放器完整显示两侧画面。因为 1344×768 与 2560×1440 的宽高比略有不同，可能看到很窄的留黑边，但不会裁剪。"
-  ],
-  "settings": [
-    "Open-H3-Regenerate-2K-IC，up3 三步，HyperFlow，LMS Sharp 1.0，CFG 1，seed 0。",
-    "FlashAttention-3，双卡 FSDP / Ulysses。",
-    "Case 04、05 的 Fast VAE 可用显存检查未通过，按官方逻辑回退到标准 H3 VAE；本页没有把它们误标为 Fast VAE。"
-  ],
-  "links": [
-    {"label": "Official model", "url": "https://huggingface.co/Efficient-Large-Model/Open-H3-Regenerate-2K-IC"},
-    {"label": "NVlabs / Sana", "url": "https://github.com/NVlabs/Sana"}
-  ],
   "cases": [
     {
       "id": "case_04",

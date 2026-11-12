@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#080b10">
-    <meta name="description" content="Open-H3 IC 的 before_768p 与 after_2k 左右滑动对比。">
-    <title>Open-H3 IC · Video Comparison</title>
+    <meta name="description" content="Open-H3-IC 的 H3 VAE 与 Fast H3 VAE 视频对比实验集合。">
+    <title>Open-H3-IC · Video Comparison</title>
     <link rel="stylesheet" href="../../assets/site.css">
   </head>
   <body>
@@ -16,43 +16,67 @@
 
     <main class="comparison-main">
       <a class="breadcrumb" href="../../">← 返回实验目录</a>
-      <section class="comparison-intro">
-        <div>
-          <p class="kicker">DRAGGABLE BEFORE / AFTER</p>
-          <h1 id="experiment-title">正在加载实验…</h1>
-          <p class="comparison-description" id="experiment-description"></p>
-        </div>
-        <div class="case-picker"><label for="case-select">选择案例</label><select id="case-select" aria-label="选择视频案例"></select></div>
+
+      <section class="collection-intro">
+        <p class="kicker">EXPERIMENT COLLECTION</p>
+        <h1>Open-H3-IC</h1>
+        <p>在同一页面切换 H3 VAE、Fast H3 VAE 和两种解码结果的直接比较。新案例加入后，原有子实验和链接保持不变。</p>
       </section>
 
-      <section class="comparison-shell" aria-label="视频左右滑动对比播放器">
-        <div class="video-stage" id="video-stage">
-          <video class="video-layer before" id="before-video" muted playsinline loop preload="metadata"></video>
-          <video class="video-layer after" id="after-video" muted playsinline loop preload="metadata"></video>
-          <span class="stage-label left" id="left-stage-label">Before</span>
-          <span class="stage-label right" id="right-stage-label">After</span>
-          <div class="split-line" aria-hidden="true"></div>
-          <button class="split-handle" id="split-handle" type="button" aria-label="拖动左右对比分割线" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></button>
-          <p class="stage-message" id="stage-message">正在读取实验清单…</p>
+      <section class="subexperiment-section" aria-labelledby="subexperiment-heading">
+        <div class="subexperiment-heading">
+          <h2 id="subexperiment-heading">选择子实验</h2>
+          <p>当前上线 1 项，另外 2 项等待案例。</p>
         </div>
-        <div class="controls">
-          <button class="control-button" id="play-button" type="button">播放</button>
-          <input class="timeline" id="timeline" type="range" min="0" max="1" step="0.01" value="0" aria-label="播放进度">
-          <span class="time-label" id="time-label">0:00.0 / 0:00.0</span>
-          <button class="control-button" id="mute-button" type="button">开启声音</button>
+        <div class="subexperiment-grid" id="subexperiment-grid" aria-live="polite">
+          <p class="loading-message">正在读取子实验…</p>
         </div>
-        <div class="case-metadata"><div class="meta-side" id="left-meta"></div><div class="meta-side" id="right-meta"></div></div>
       </section>
 
-      <section class="information-grid">
-        <article class="info-panel"><h2>对比说明</h2><ul id="notes-list"></ul></article>
-        <article class="info-panel"><h2>运行配置</h2><ul id="settings-list"></ul></article>
-        <article class="info-panel"><h2>相关链接</h2><div class="source-links" id="source-links"></div></article>
-        <article class="info-panel"><h2>显示原则</h2><ul><li>两侧均使用 contain 完整显示，不为匹配比例裁剪画面。</li><li>任一侧缓冲时同步暂停，避免时间轴错位。</li><li>视频文件原样复制，网页构建过程不重新编码。</li></ul></article>
+      <section id="ready-experiment-content" hidden>
+        <div class="comparison-intro subexperiment-intro">
+          <div>
+            <p class="kicker" id="experiment-kicker">VIDEO COMPARISON</p>
+            <h2 id="experiment-title">正在加载实验…</h2>
+            <p class="comparison-description" id="experiment-description"></p>
+          </div>
+          <div class="case-picker">
+            <label for="case-select">选择案例</label>
+            <select id="case-select" aria-label="选择视频案例"></select>
+          </div>
+        </div>
+
+        <section class="comparison-shell" aria-label="视频左右滑动对比播放器">
+          <div class="video-stage" id="video-stage">
+            <video class="video-layer before" id="before-video" muted playsinline loop preload="metadata"></video>
+            <video class="video-layer after" id="after-video" muted playsinline loop preload="metadata"></video>
+            <span class="stage-label left" id="left-stage-label">Before</span>
+            <span class="stage-label right" id="right-stage-label">After</span>
+            <div class="split-line" aria-hidden="true"></div>
+            <button class="split-handle" id="split-handle" type="button" aria-label="拖动左右对比分割线" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></button>
+            <p class="stage-message" id="stage-message">正在读取实验清单…</p>
+          </div>
+          <div class="controls">
+            <button class="control-button" id="play-button" type="button">播放</button>
+            <input class="timeline" id="timeline" type="range" min="0" max="1" step="0.01" value="0" aria-label="播放进度">
+            <span class="time-label" id="time-label">0:00.0 / 0:00.0</span>
+            <button class="control-button" id="mute-button" type="button">开启声音</button>
+          </div>
+          <div class="case-metadata">
+            <div class="meta-side" id="left-meta"></div>
+            <div class="meta-side" id="right-meta"></div>
+          </div>
+        </section>
+      </section>
+
+      <section class="pending-experiment" id="pending-experiment-content" hidden>
+        <span class="pending-badge">案例待添加</span>
+        <h2 id="pending-title"></h2>
+        <p id="pending-description"></p>
       </section>
     </main>
 
-    <footer class="site-footer"><span>VIDEO COMPARISON</span><span>Drag the divider · inspect the difference.</span></footer>
+    <footer class="site-footer"><span>VIDEO COMPARISON</span><span>Open-H3-IC · experiment collection.</span></footer>
     <script src="../../assets/comparison.js" defer></script>
   </body>
 </html>

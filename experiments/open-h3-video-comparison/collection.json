@@ -1,0 +1,32 @@
+{
+  "title": "Open-H3-IC",
+  "experiments": [
+    {
+      "id": "h3-vae",
+      "index": "01",
+      "title": "H3 VAE",
+      "subtitle": "Before 768P / After 2K",
+      "summary": "官方 read_draft 输入可视化与标准 H3 VAE 解码输出。",
+      "status": "ready",
+      "manifest": "manifest.json"
+    },
+    {
+      "id": "fast-h3-vae",
+      "index": "02",
+      "title": "Fast H3 VAE",
+      "subtitle": "Before 768P / After 2K",
+      "summary": "Fast H3 VAE 输出完成后，将在这里加入对应案例。",
+      "status": "pending",
+      "manifest": null
+    },
+    {
+      "id": "h3-vs-fast-h3-vae",
+      "index": "03",
+      "title": "H3 VAE / Fast H3 VAE",
+      "subtitle": "Decoder Comparison",
+      "summary": "同一输入下，两种 VAE 解码结果的直接左右对比。",
+      "status": "pending",
+      "manifest": null
+    }
+  ]
+}
