@@ -1,0 +1,14 @@
+{
+  "experiments": [
+    {
+      "slug": "open-h3-video-comparison",
+      "title": "Open-H3 IC · Before 768P / After 2K",
+      "summary": "比较官方 read_draft 输入可视化与 Open-H3-Regenerate-2K-IC 输出，首批包含 Case 04、05。",
+      "href": "experiments/open-h3-video-comparison/",
+      "caseCount": 2,
+      "leftLabel": "before_768p",
+      "rightLabel": "after_2k",
+      "updated": "2026-11-12"
+    }
+  ]
+}

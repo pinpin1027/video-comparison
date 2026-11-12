@@ -1,0 +1,20 @@
+{
+  "slug": "my-new-experiment",
+  "title": "My Experiment · Before / After",
+  "summary": "显示在网站总目录卡片上的简短说明。",
+  "description": "显示在实验详情页上的完整说明。",
+  "leftLabel": "Before",
+  "rightLabel": "After",
+  "updated": "2026-11-12",
+  "notes": ["说明左右视频分别来自哪里。"],
+  "settings": ["记录模型、步数、CFG、seed、VAE 和 GPU 配置。"],
+  "links": [{"label": "Project", "url": "https://example.com"}],
+  "cases": [
+    {
+      "id": "case_01",
+      "title": "Case 01",
+      "left": "/absolute/private/path/before.mp4",
+      "right": "/absolute/private/path/after.mp4"
+    }
+  ]
+}
