@@ -24,9 +24,9 @@
       "index": "03",
       "title": "H3 VAE / Fast H3 VAE",
       "subtitle": "Decoder Comparison",
-      "summary": "同一输入下，两种 VAE 解码结果的直接左右对比。",
-      "status": "pending",
-      "manifest": null
+      "summary": "同一输入下，H3 VAE 与 Fast H3 VAE 的 2K 输出直接左右对比。",
+      "status": "ready",
+      "manifest": "manifest-compare.json"
     }
   ]
 }
