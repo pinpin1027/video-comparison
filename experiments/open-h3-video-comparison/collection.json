@@ -27,6 +27,15 @@
       "summary": "同一输入下，H3 VAE 与 Fast H3 VAE 的 2K 输出直接左右对比。",
       "status": "ready",
       "manifest": "manifest-compare.json"
+    },
+    {
+      "id": "validation",
+      "index": "04",
+      "title": "Validation",
+      "subtitle": "Ours / IC Official",
+      "summary": "PARK768s 输入下，官方 IC 流程与 ours-auto / ours-fast 的对比。",
+      "status": "ready",
+      "manifest": "manifest-validation.json"
     }
   ]
 }

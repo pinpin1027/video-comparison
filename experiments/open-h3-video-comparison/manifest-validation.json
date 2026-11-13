@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "slug": "open-h3-ic-validation",
+  "title": "Validation：Ours / IC Official",
+  "description": "同一段 PARK768s 输入下，官方 IC 流程与我们的两种生成结果的对比。Standard 使用 ours-auto（自动模式），Fast 使用 ours-fast（快速模式）；左侧均为 IC official 参考。播放器使用同分辨率网页优化版，并保留原始文件下载；视频文件存放于 Cloudflare R2。",
+  "leftLabel": "IC official",
+  "rightLabel": "Ours",
+  "cases": [
+    {
+      "id": "standard",
+      "title": "Standard",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/validation/web/ic-official.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/validation/web/ours-auto.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/validation/ic-official.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/validation/ours-auto.mp4",
+      "leftMeta": {"width": 2560, "height": 1440, "fps": 24, "frames": 116, "duration": 4.833333, "size": 6068192, "originalSize": 11259721},
+      "rightMeta": {"width": 2560, "height": 1440, "fps": 24, "frames": 116, "duration": 4.833333, "size": 4283993, "originalSize": 22916489}
+    },
+    {
+      "id": "fast",
+      "title": "Fast",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/validation/web/ic-official.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/validation/web/ours-fast.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/validation/ic-official.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/validation/ours-fast.mp4",
+      "leftMeta": {"width": 2560, "height": 1440, "fps": 24, "frames": 116, "duration": 4.833333, "size": 6068192, "originalSize": 11259721},
+      "rightMeta": {"width": 2560, "height": 1440, "fps": 24, "frames": 116, "duration": 4.833333, "size": 3865322, "originalSize": 21054435}
+    }
+  ]
+}
