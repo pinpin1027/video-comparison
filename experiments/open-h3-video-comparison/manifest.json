@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "slug": "open-h3-ic-h3-vae",
   "title": "H3 VAE：Before 768P / After 2K",
-  "description": "左侧为官方 IC read_draft 流程导出的输入可视化，右侧为标准 H3 VAE 解码的 Open-H3-Regenerate-2K-IC 输出。播放器使用同分辨率网页优化版，并保留原始文件下载；视频文件存放于 Cloudflare R2。当前包含 Case 04、05。",
+  "description": "左侧为官方 IC read_draft 流程导出的输入可视化，右侧为标准 H3 VAE 解码的 Open-H3-Regenerate-2K-IC 输出。播放器使用同分辨率网页优化版，并保留原始文件下载；视频文件存放于 Cloudflare R2。当前包含 Case 04、05、08、09、10、13、16、18、20、21、24、25、26、27、28、42。",
   "leftLabel": "Before · before_768p",
   "rightLabel": "After · after_2k",
   "cases": [
@@ -35,17 +35,17 @@
     {
       "id": "case_05",
       "title": "Case 05",
-      "left": "videos/case_05/web/before_768p.mp4",
-      "right": "videos/case_05/web/after_2k.mp4",
-      "leftOriginal": "videos/case_05/before_768p.mp4",
-      "rightOriginal": "videos/case_05/after_2k.mp4",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_05/web/before_768p.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_05/web/after_2k.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_05/before_768p.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_05/after_2k.mp4",
       "leftMeta": {
         "width": 1344,
         "height": 768,
         "fps": 24,
         "frames": 124,
         "duration": 5.166667,
-        "size": 3225808,
+        "size": 2480638,
         "originalSize": 38684625
       },
       "rightMeta": {
@@ -54,8 +54,372 @@
         "fps": 24,
         "frames": 124,
         "duration": 5.166667,
-        "size": 11266378,
+        "size": 8230945,
         "originalSize": 28436088
+      }
+    },
+    {
+      "id": "case_08",
+      "title": "Case 08",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_08/web/before_768p.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_08/web/after_2k.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_08/before_768p.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_08/after_2k.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 1162982,
+        "originalSize": 30521917
+      },
+      "rightMeta": {
+        "width": 2560,
+        "height": 1440,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 4140561,
+        "originalSize": 18997045
+      }
+    },
+    {
+      "id": "case_09",
+      "title": "Case 09",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_09/web/before_768p.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_09/web/after_2k.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_09/before_768p.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_09/after_2k.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 4926423,
+        "originalSize": 56090519
+      },
+      "rightMeta": {
+        "width": 2560,
+        "height": 1440,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 14408440,
+        "originalSize": 40324224
+      }
+    },
+    {
+      "id": "case_10",
+      "title": "Case 10",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_10/web/before_768p.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_10/web/after_2k.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_10/before_768p.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_10/after_2k.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 4350619,
+        "originalSize": 51129601
+      },
+      "rightMeta": {
+        "width": 2560,
+        "height": 1440,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 13678291,
+        "originalSize": 39672936
+      }
+    },
+    {
+      "id": "case_13",
+      "title": "Case 13",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_13/web/before_768p.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_13/web/after_2k.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_13/before_768p.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_13/after_2k.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 1797903,
+        "originalSize": 26496695
+      },
+      "rightMeta": {
+        "width": 2560,
+        "height": 1440,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 5350163,
+        "originalSize": 17426678
+      }
+    },
+    {
+      "id": "case_16",
+      "title": "Case 16",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_16/web/before_768p.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_16/web/after_2k.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_16/before_768p.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_16/after_2k.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 1297846,
+        "originalSize": 28807633
+      },
+      "rightMeta": {
+        "width": 2560,
+        "height": 1440,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 5069911,
+        "originalSize": 19555013
+      }
+    },
+    {
+      "id": "case_18",
+      "title": "Case 18",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_18/web/before_768p.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_18/web/after_2k.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_18/before_768p.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_18/after_2k.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 3050566,
+        "originalSize": 38007805
+      },
+      "rightMeta": {
+        "width": 2560,
+        "height": 1440,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 10857217,
+        "originalSize": 31229409
+      }
+    },
+    {
+      "id": "case_20",
+      "title": "Case 20",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_20/web/before_768p.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_20/web/after_2k.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_20/before_768p.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_20/after_2k.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 2749529,
+        "originalSize": 37360881
+      },
+      "rightMeta": {
+        "width": 2560,
+        "height": 1440,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 9799273,
+        "originalSize": 27716110
+      }
+    },
+    {
+      "id": "case_21",
+      "title": "Case 21",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_21/web/before_768p.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_21/web/after_2k.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_21/before_768p.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_21/after_2k.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 4038330,
+        "originalSize": 51023323
+      },
+      "rightMeta": {
+        "width": 2560,
+        "height": 1440,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 13070409,
+        "originalSize": 36218905
+      }
+    },
+    {
+      "id": "case_24",
+      "title": "Case 24",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_24/web/before_768p.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_24/web/after_2k.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_24/before_768p.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_24/after_2k.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 1117544,
+        "originalSize": 27224171
+      },
+      "rightMeta": {
+        "width": 2560,
+        "height": 1440,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 4196212,
+        "originalSize": 17751725
+      }
+    },
+    {
+      "id": "case_25",
+      "title": "Case 25",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_25/web/before_768p.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_25/web/after_2k.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_25/before_768p.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_25/after_2k.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 2135248,
+        "originalSize": 36266488
+      },
+      "rightMeta": {
+        "width": 2560,
+        "height": 1440,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 7307086,
+        "originalSize": 26339778
+      }
+    },
+    {
+      "id": "case_26",
+      "title": "Case 26",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_26/web/before_768p.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_26/web/after_2k.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_26/before_768p.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_26/after_2k.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 4102709,
+        "originalSize": 44681003
+      },
+      "rightMeta": {
+        "width": 2560,
+        "height": 1440,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 12017314,
+        "originalSize": 32839506
+      }
+    },
+    {
+      "id": "case_27",
+      "title": "Case 27",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_27/web/before_768p.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_27/web/after_2k.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_27/before_768p.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_27/after_2k.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 2101316,
+        "originalSize": 31392038
+      },
+      "rightMeta": {
+        "width": 2560,
+        "height": 1440,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 7526838,
+        "originalSize": 25202976
+      }
+    },
+    {
+      "id": "case_28",
+      "title": "Case 28",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_28/web/before_768p.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_28/web/after_2k.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_28/before_768p.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_28/after_2k.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 1686331,
+        "originalSize": 26322298
+      },
+      "rightMeta": {
+        "width": 2560,
+        "height": 1440,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 5447550,
+        "originalSize": 20865613
+      }
+    },
+    {
+      "id": "case_42",
+      "title": "Case 42",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_42/web/before_768p.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_42/web/after_2k.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_42/before_768p.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/h3-vae/case_42/after_2k.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 1114942,
+        "originalSize": 14138521
+      },
+      "rightMeta": {
+        "width": 2560,
+        "height": 1440,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.166667,
+        "size": 4557576,
+        "originalSize": 17552287
       }
     }
   ]
