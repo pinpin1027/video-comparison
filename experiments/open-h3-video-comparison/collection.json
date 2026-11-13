@@ -15,9 +15,9 @@
       "index": "02",
       "title": "Fast H3 VAE",
       "subtitle": "Before 768P / After 2K",
-      "summary": "Fast H3 VAE 输出完成后，将在这里加入对应案例。",
-      "status": "pending",
-      "manifest": null
+      "summary": "与 H3 VAE 相同的输入，Fast H3 VAE 解码的 2K 输出。",
+      "status": "ready",
+      "manifest": "manifest-fast.json"
     },
     {
       "id": "h3-vs-fast-h3-vae",

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "slug": "open-h3-ic-fast-h3-vae",
+  "title": "Fast H3 VAE：Before 768P / After 2K",
+  "description": "左侧为官方 IC read_draft 流程导出的输入可视化，右侧为 Fast H3 VAE 解码的 Open-H3-Regenerate-2K-IC 输出。播放器使用同分辨率网页优化版，并保留原始文件下载；视频文件存放于 Cloudflare R2。当前包含 Case 04。",
+  "leftLabel": "Before · before_768p",
+  "rightLabel": "After · after_2k_fast",
+  "cases": [
+    {
+      "id": "case_04",
+      "title": "Case 04",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/fast-h3-vae/case_04/web/before_768p.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/fast-h3-vae/case_04/web/after_2k_fast.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/fast-h3-vae/case_04/before_768p.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/open-h3-ic/fast-h3-vae/case_04/after_2k_fast.mp4",
+      "leftMeta": {"width": 1344, "height": 768, "fps": 24, "frames": 124, "duration": 5.166667, "size": 1640531, "originalSize": 23321095},
+      "rightMeta": {"width": 2560, "height": 1440, "fps": 24, "frames": 124, "duration": 5.166667, "size": 5356744, "originalSize": 19282568}
+    }
+  ]
+}
