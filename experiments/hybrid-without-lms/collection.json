@@ -24,9 +24,9 @@
       "index": "03",
       "title": "人脸油腻case",
       "subtitle": "Agnes Production / Hybrid",
-      "summary": "等待 Hybrid 侧产出后加入。",
-      "status": "pending",
-      "manifest": null
+      "summary": "人脸油腻case：Agnes Production 产线输出与 Hybrid 输出的逐案例对比，共 26 个案例。",
+      "status": "ready",
+      "manifest": "manifest-face-oil.json"
     }
   ]
 }

@@ -1,0 +1,686 @@
+{
+  "schemaVersion": 1,
+  "slug": "hybrid-without-lms-face-oil-case",
+  "title": "人脸油腻case：Agnes Production / Hybrid",
+  "description": "左侧为 Agnes Production 产线的输出，右侧为 Hybrid 的输出。视频文件存放于 Cloudflare R2，直接以原始文件在线播放，并保留下载链接。当前包含 Case 01、02、03、04、05、06、07、08、09、10、11、12、13、14、15、16、17、18、19、20、21、22、23、24、25、26（前 20 个为 ref2va，后 6 个为 text2video）。",
+  "leftLabel": "Agnes Production",
+  "rightLabel": "Hybrid",
+  "cases": [
+    {
+      "id": "case_01",
+      "title": "Case 01 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_01/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_01/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_01/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_01/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 2424467,
+        "originalSize": 2424467
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 4483301,
+        "originalSize": 4483301
+      }
+    },
+    {
+      "id": "case_02",
+      "title": "Case 02 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_02/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_02/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_02/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_02/hybrid.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 2749621,
+        "originalSize": 2749621
+      },
+      "rightMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 5549877,
+        "originalSize": 5549877
+      }
+    },
+    {
+      "id": "case_03",
+      "title": "Case 03 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_03/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_03/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_03/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_03/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 768,
+        "fps": 24,
+        "frames": 277,
+        "duration": 11.55,
+        "size": 2589139,
+        "originalSize": 2589139
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 768,
+        "fps": 24,
+        "frames": 277,
+        "duration": 11.55,
+        "size": 4483581,
+        "originalSize": 4483581
+      }
+    },
+    {
+      "id": "case_04",
+      "title": "Case 04 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_04/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_04/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_04/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_04/hybrid.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 2028883,
+        "originalSize": 2028883
+      },
+      "rightMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 3628013,
+        "originalSize": 3628013
+      }
+    },
+    {
+      "id": "case_05",
+      "title": "Case 05 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_05/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_05/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_05/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_05/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 1817733,
+        "originalSize": 1817733
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 3632059,
+        "originalSize": 3632059
+      }
+    },
+    {
+      "id": "case_06",
+      "title": "Case 06 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_06/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_06/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_06/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_06/hybrid.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 1694956,
+        "originalSize": 1694956
+      },
+      "rightMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 3446571,
+        "originalSize": 3446571
+      }
+    },
+    {
+      "id": "case_07",
+      "title": "Case 07 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_07/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_07/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_07/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_07/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 192,
+        "duration": 8,
+        "size": 1355085,
+        "originalSize": 1355085
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 192,
+        "duration": 8,
+        "size": 2797171,
+        "originalSize": 2797171
+      }
+    },
+    {
+      "id": "case_08",
+      "title": "Case 08 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_08/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_08/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_08/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_08/hybrid.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 1965826,
+        "originalSize": 1965826
+      },
+      "rightMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 3835743,
+        "originalSize": 3835743
+      }
+    },
+    {
+      "id": "case_09",
+      "title": "Case 09 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_09/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_09/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_09/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_09/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 2610043,
+        "originalSize": 2610043
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 5459762,
+        "originalSize": 5459762
+      }
+    },
+    {
+      "id": "case_10",
+      "title": "Case 10 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_10/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_10/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_10/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_10/hybrid.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 884848,
+        "originalSize": 884848
+      },
+      "rightMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 1909643,
+        "originalSize": 1909643
+      }
+    },
+    {
+      "id": "case_11",
+      "title": "Case 11 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_11/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_11/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_11/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_11/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 1880647,
+        "originalSize": 1880647
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 4122278,
+        "originalSize": 4122278
+      }
+    },
+    {
+      "id": "case_12",
+      "title": "Case 12 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_12/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_12/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_12/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_12/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 2432498,
+        "originalSize": 2432498
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 4422217,
+        "originalSize": 4422217
+      }
+    },
+    {
+      "id": "case_13",
+      "title": "Case 13 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_13/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_13/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_13/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_13/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 2254365,
+        "originalSize": 2254365
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 4235882,
+        "originalSize": 4235882
+      }
+    },
+    {
+      "id": "case_14",
+      "title": "Case 14 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_14/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_14/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_14/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_14/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 1786215,
+        "originalSize": 1786215
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 4049657,
+        "originalSize": 4049657
+      }
+    },
+    {
+      "id": "case_15",
+      "title": "Case 15 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_15/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_15/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_15/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_15/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 3181668,
+        "originalSize": 3181668
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 7870433,
+        "originalSize": 7870433
+      }
+    },
+    {
+      "id": "case_16",
+      "title": "Case 16 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_16/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_16/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_16/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_16/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 1858686,
+        "originalSize": 1858686
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 3587620,
+        "originalSize": 3587620
+      }
+    },
+    {
+      "id": "case_17",
+      "title": "Case 17 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_17/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_17/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_17/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_17/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 1916255,
+        "originalSize": 1916255
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 3144176,
+        "originalSize": 3144176
+      }
+    },
+    {
+      "id": "case_18",
+      "title": "Case 18 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_18/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_18/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_18/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_18/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 2743767,
+        "originalSize": 2743767
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 5355247,
+        "originalSize": 5355247
+      }
+    },
+    {
+      "id": "case_19",
+      "title": "Case 19 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_19/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_19/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_19/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_19/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 1846007,
+        "originalSize": 1846007
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 4013746,
+        "originalSize": 4013746
+      }
+    },
+    {
+      "id": "case_20",
+      "title": "Case 20 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_20/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_20/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_20/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_20/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 1510170,
+        "originalSize": 1510170
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 2502600,
+        "originalSize": 2502600
+      }
+    },
+    {
+      "id": "case_21",
+      "title": "Case 21 · text2video",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_21/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_21/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_21/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_21/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 1554915,
+        "originalSize": 1554915
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 3784916,
+        "originalSize": 3784916
+      }
+    },
+    {
+      "id": "case_22",
+      "title": "Case 22 · text2video",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_22/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_22/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_22/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_22/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 3338674,
+        "originalSize": 3338674
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 6636055,
+        "originalSize": 6636055
+      }
+    },
+    {
+      "id": "case_23",
+      "title": "Case 23 · text2video",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_23/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_23/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_23/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_23/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 2560672,
+        "originalSize": 2560672
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 6229899,
+        "originalSize": 6229899
+      }
+    },
+    {
+      "id": "case_24",
+      "title": "Case 24 · text2video",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_24/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_24/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_24/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_24/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 2835740,
+        "originalSize": 2835740
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 5569538,
+        "originalSize": 5569538
+      }
+    },
+    {
+      "id": "case_25",
+      "title": "Case 25 · text2video",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_25/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_25/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_25/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_25/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 2069608,
+        "originalSize": 2069608
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 5317193,
+        "originalSize": 5317193
+      }
+    },
+    {
+      "id": "case_26",
+      "title": "Case 26 · text2video",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_26/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_26/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_26/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/face-oil-case/case_26/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 1723467,
+        "originalSize": 1723467
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 3420356,
+        "originalSize": 3420356
+      }
+    }
+  ]
+}
