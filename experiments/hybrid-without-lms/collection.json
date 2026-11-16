@@ -15,9 +15,9 @@
       "index": "02",
       "title": "facecases4",
       "subtitle": "Agnes Production / Hybrid",
-      "summary": "Agnes Production 产线输出与 Hybrid 输出的逐案例对比（Hybrid 侧产出后持续补充）。",
-      "status": "ready",
-      "manifest": "manifest-facecases4.json"
+      "summary": "案例待添加。",
+      "status": "pending",
+      "manifest": null
     },
     {
       "id": "face-oil-case",
