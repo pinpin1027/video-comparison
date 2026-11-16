@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "slug": "hybrid-without-lms-facecases3",
   "title": "facecases3：Agnes Production / Hybrid",
-  "description": "左侧为 Agnes Production 产线的输出，右侧为 Hybrid 的输出。播放器使用同分辨率网页优化版，并保留原始文件下载；视频文件存放于 Cloudflare R2。当前包含 Case 01。",
+  "description": "左侧为 Agnes Production 产线的输出，右侧为 Hybrid 的输出。播放器使用同分辨率网页优化版，并保留原始文件下载；视频文件存放于 Cloudflare R2。当前包含 Case 01、03、04、05、06、07、08、09、10、11、13、14、15、17、19、20、21、23、24、25、26、27、28、29。",
   "leftLabel": "Agnes Production",
   "rightLabel": "Hybrid",
   "cases": [
@@ -13,8 +13,622 @@
       "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_01/web/hybrid.mp4",
       "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_01/agnes.mp4",
       "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_01/hybrid.mp4",
-      "leftMeta": {"width": 768, "height": 1344, "fps": 24, "frames": 294, "duration": 12.25, "size": 4464587, "originalSize": 3343181},
-      "rightMeta": {"width": 768, "height": 1344, "fps": 24, "frames": 294, "duration": 12.25, "size": 6408435, "originalSize": 7760901}
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 4464587,
+        "originalSize": 3343181
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 6408435,
+        "originalSize": 7760901
+      }
+    },
+    {
+      "id": "case_03",
+      "title": "Case 03 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_03/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_03/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_03/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_03/hybrid.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 4426873,
+        "originalSize": 3227506
+      },
+      "rightMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 4417960,
+        "originalSize": 5296507
+      }
+    },
+    {
+      "id": "case_04",
+      "title": "Case 04 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_04/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_04/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_04/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_04/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 4236898,
+        "originalSize": 3197320
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 5414896,
+        "originalSize": 6815592
+      }
+    },
+    {
+      "id": "case_05",
+      "title": "Case 05 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_05/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_05/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_05/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_05/hybrid.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 3632603,
+        "originalSize": 2635296
+      },
+      "rightMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 4160846,
+        "originalSize": 4975402
+      }
+    },
+    {
+      "id": "case_06",
+      "title": "Case 06 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_06/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_06/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_06/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_06/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 4179790,
+        "originalSize": 3222377
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 5634130,
+        "originalSize": 6851119
+      }
+    },
+    {
+      "id": "case_07",
+      "title": "Case 07 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_07/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_07/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_07/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_07/hybrid.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 5457871,
+        "originalSize": 3867468
+      },
+      "rightMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 5354654,
+        "originalSize": 6462709
+      }
+    },
+    {
+      "id": "case_08",
+      "title": "Case 08 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_08/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_08/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_08/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_08/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 5209419,
+        "originalSize": 3798794
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 7216486,
+        "originalSize": 8634570
+      }
+    },
+    {
+      "id": "case_09",
+      "title": "Case 09 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_09/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_09/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_09/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_09/hybrid.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 6189660,
+        "originalSize": 4817488
+      },
+      "rightMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 8648740,
+        "originalSize": 10768359
+      }
+    },
+    {
+      "id": "case_10",
+      "title": "Case 10 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_10/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_10/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_10/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_10/hybrid.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 3600212,
+        "originalSize": 2554914
+      },
+      "rightMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 3815085,
+        "originalSize": 4696207
+      }
+    },
+    {
+      "id": "case_11",
+      "title": "Case 11 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_11/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_11/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_11/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_11/hybrid.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 5170977,
+        "originalSize": 4318796
+      },
+      "rightMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 7866592,
+        "originalSize": 9543415
+      }
+    },
+    {
+      "id": "case_13",
+      "title": "Case 13 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_13/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_13/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_13/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_13/hybrid.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 2758318,
+        "originalSize": 1984310
+      },
+      "rightMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 3359897,
+        "originalSize": 3943042
+      }
+    },
+    {
+      "id": "case_14",
+      "title": "Case 14 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_14/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_14/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_14/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_14/hybrid.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 2091265,
+        "originalSize": 1519782
+      },
+      "rightMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 2965258,
+        "originalSize": 3582940
+      }
+    },
+    {
+      "id": "case_15",
+      "title": "Case 15 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_15/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_15/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_15/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_15/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 3947806,
+        "originalSize": 3049932
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 4876175,
+        "originalSize": 6031576
+      }
+    },
+    {
+      "id": "case_17",
+      "title": "Case 17 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_17/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_17/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_17/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_17/hybrid.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 175,
+        "duration": 7.3,
+        "size": 3332659,
+        "originalSize": 2268766
+      },
+      "rightMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 175,
+        "duration": 7.3,
+        "size": 3675911,
+        "originalSize": 4582787
+      }
+    },
+    {
+      "id": "case_19",
+      "title": "Case 19 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_19/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_19/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_19/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_19/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 6309863,
+        "originalSize": 4724691
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 7720071,
+        "originalSize": 9472981
+      }
+    },
+    {
+      "id": "case_20",
+      "title": "Case 20 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_20/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_20/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_20/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_20/hybrid.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 3351459,
+        "originalSize": 2696196
+      },
+      "rightMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 6160643,
+        "originalSize": 7526043
+      }
+    },
+    {
+      "id": "case_21",
+      "title": "Case 21 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_21/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_21/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_21/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_21/hybrid.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 3594235,
+        "originalSize": 2571546
+      },
+      "rightMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 4899165,
+        "originalSize": 5904486
+      }
+    },
+    {
+      "id": "case_23",
+      "title": "Case 23 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_23/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_23/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_23/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_23/hybrid.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.175,
+        "size": 2373963,
+        "originalSize": 1776051
+      },
+      "rightMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 124,
+        "duration": 5.175,
+        "size": 2756887,
+        "originalSize": 3340638
+      }
+    },
+    {
+      "id": "case_24",
+      "title": "Case 24 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_24/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_24/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_24/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_24/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 2885341,
+        "originalSize": 2117950
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 2909171,
+        "originalSize": 3512434
+      }
+    },
+    {
+      "id": "case_25",
+      "title": "Case 25 · fl2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_25/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_25/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_25/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_25/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 2244811,
+        "originalSize": 1498045
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 243,
+        "duration": 10.125,
+        "size": 3415868,
+        "originalSize": 4290240
+      }
+    },
+    {
+      "id": "case_26",
+      "title": "Case 26 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_26/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_26/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_26/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_26/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 158,
+        "duration": 6.583333,
+        "size": 1366973,
+        "originalSize": 1060892
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 158,
+        "duration": 6.583333,
+        "size": 1724078,
+        "originalSize": 2041631
+      }
+    },
+    {
+      "id": "case_27",
+      "title": "Case 27 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_27/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_27/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_27/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_27/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 107,
+        "duration": 4.458333,
+        "size": 1777062,
+        "originalSize": 1261907
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 107,
+        "duration": 4.458333,
+        "size": 1589819,
+        "originalSize": 1872226
+      }
+    },
+    {
+      "id": "case_28",
+      "title": "Case 28 · fl2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_28/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_28/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_28/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_28/hybrid.mp4",
+      "leftMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 3180481,
+        "originalSize": 2385815
+      },
+      "rightMeta": {
+        "width": 768,
+        "height": 1344,
+        "fps": 24,
+        "frames": 294,
+        "duration": 12.25,
+        "size": 4266108,
+        "originalSize": 5006516
+      }
+    },
+    {
+      "id": "case_29",
+      "title": "Case 29 · ref2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_29/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_29/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_29/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_29/hybrid.mp4",
+      "leftMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 192,
+        "duration": 8,
+        "size": 2407324,
+        "originalSize": 1685651
+      },
+      "rightMeta": {
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "frames": 192,
+        "duration": 8,
+        "size": 4328545,
+        "originalSize": 5040913
+      }
     }
   ]
 }
