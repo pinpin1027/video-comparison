@@ -10,6 +10,17 @@
       "leftLabel": "H3 VAE",
       "rightLabel": "Fast H3 VAE",
       "updated": "2026-11-12"
+    },
+    {
+      "slug": "hybrid-without-lms",
+      "title": "Hybrid without LMS",
+      "summary": "Hybrid without LMS 对比实验集合：facecases3、facecases4 与人脸油腻case。左侧 Agnes Production，右侧 Hybrid。",
+      "href": "experiments/hybrid-without-lms/",
+      "caseCount": 3,
+      "countLabel": "个子实验",
+      "leftLabel": "Agnes Production",
+      "rightLabel": "Hybrid",
+      "updated": "2026-11-16"
     }
   ]
 }

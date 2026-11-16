@@ -1,0 +1,32 @@
+{
+  "title": "Hybrid without LMS",
+  "experiments": [
+    {
+      "id": "facecases3",
+      "index": "01",
+      "title": "facecases3",
+      "subtitle": "Agnes Production / Hybrid",
+      "summary": "Agnes Production 产线输出与 Hybrid 输出的逐案例对比。",
+      "status": "ready",
+      "manifest": "manifest-facecases3.json"
+    },
+    {
+      "id": "facecases4",
+      "index": "02",
+      "title": "facecases4",
+      "subtitle": "Agnes Production / Hybrid",
+      "summary": "案例待添加。",
+      "status": "pending",
+      "manifest": null
+    },
+    {
+      "id": "face-oil-case",
+      "index": "03",
+      "title": "人脸油腻case",
+      "subtitle": "Agnes Production / Hybrid",
+      "summary": "案例待添加。",
+      "status": "pending",
+      "manifest": null
+    }
+  ]
+}

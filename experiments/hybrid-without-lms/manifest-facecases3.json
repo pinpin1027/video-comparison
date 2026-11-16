@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "slug": "hybrid-without-lms-facecases3",
+  "title": "facecases3：Agnes Production / Hybrid",
+  "description": "左侧为 Agnes Production 产线的输出，右侧为 Hybrid 的输出。播放器使用同分辨率网页优化版，并保留原始文件下载；视频文件存放于 Cloudflare R2。当前包含 Case 01。",
+  "leftLabel": "Agnes Production",
+  "rightLabel": "Hybrid",
+  "cases": [
+    {
+      "id": "case_01",
+      "title": "Case 01 · fl2va",
+      "left": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_01/web/agnes.mp4",
+      "right": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_01/web/hybrid.mp4",
+      "leftOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_01/agnes.mp4",
+      "rightOriginal": "https://pub-21c0ad0f1d6c4c94baebba9bdea75727.r2.dev/hybrid-without-lms/facecases3/case_01/hybrid.mp4",
+      "leftMeta": {"width": 768, "height": 1344, "fps": 24, "frames": 294, "duration": 12.25, "size": 4464587, "originalSize": 3343181},
+      "rightMeta": {"width": 768, "height": 1344, "fps": 24, "frames": 294, "duration": 12.25, "size": 6408435, "originalSize": 7760901}
+    }
+  ]
+}
