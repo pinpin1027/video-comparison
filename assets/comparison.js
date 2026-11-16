@@ -55,6 +55,12 @@ function metaMarkup(label, meta, originalUrl) {
   return `<strong>${label}</strong><span class="meta-details">${metaText(meta)}</span>${download}`;
 }
 
+function setStageAspect(leftMeta, rightMeta) {
+  const ratio = (meta) => (meta && Number(meta.width) > 0 && Number(meta.height) > 0 ? Number(meta.width) / Number(meta.height) : 0);
+  const value = ratio(leftMeta) || ratio(rightMeta) || (16 / 9);
+  stage.style.setProperty("--stage-aspect", String(value));
+}
+
 function setSplit(percent) {
   const value = Math.min(100, Math.max(0, percent));
   stage.style.setProperty("--split", `${value}%`);
@@ -218,6 +224,9 @@ for (const video of [beforeVideo, afterVideo]) {
 beforeVideo.addEventListener("loadedmetadata", () => {
   timeline.max = String(Math.min(beforeVideo.duration || 0, afterVideo.duration || Infinity));
   updateTimeline();
+  if (beforeVideo.videoWidth > 0 && beforeVideo.videoHeight > 0) {
+    stage.style.setProperty("--stage-aspect", String(beforeVideo.videoWidth / beforeVideo.videoHeight));
+  }
 });
 afterVideo.addEventListener("loadedmetadata", () => {
   timeline.max = String(Math.min(beforeVideo.duration || Infinity, afterVideo.duration || 0));
@@ -236,6 +245,7 @@ function applyCase(caseId, updateUrl = true) {
   leftMeta.innerHTML = metaMarkup(manifest.leftLabel, selected.leftMeta, selected.leftOriginal);
   rightMeta.innerHTML = metaMarkup(manifest.rightLabel, selected.rightMeta, selected.rightOriginal);
   caseSelect.value = selected.id;
+  setStageAspect(selected.leftMeta, selected.rightMeta);
   showMessage("点击播放开始同步对比；拖动中线查看左右差异。");
   if (updateUrl) {
     const url = new URL(window.location.href);
